@@ -7,7 +7,9 @@ replicaCount: 2
 image:
   repository: aborysenko
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v.1.0.5-61247f0-arm64"
+  tag: "v.1.0.5-61247f0"
+  arch: arm64
+  name: kbot
 
 secret:
   name: "kbot"
