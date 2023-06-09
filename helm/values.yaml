@@ -3,21 +3,17 @@
 # Declare variables to be passed into your templates.
 
 replicaCount: 2
-
 image:
   repository: aborysenko
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v.1.0.5-1d3cf3f"
-  arch: arm64
+  tag: "v.1.0.5-605ddc7"
+  arch: ""
   name: kbot
-
 secret:
   name: "kbot"
   env: "TELE_TOKEN"
   key: "token"
-  
 securityContext:
   privileged: true
-
 service:
   port: 80
